@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --cor0: white;
+    --cor1: #bf815e;
+    --cor2: #730202;
+    --cor3: black;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor2);
+    color: var(--cor0);
+}
+
+
+/* Header */
+
+header {
+    background-color: var(--cor2);
+    color: var(--cor1);
+    min-height: 50px;
+    width: 100vw;
+    text-align: center;
+    position: fixed; 
+    z-index: 1;
+}
+
+nav {
+    padding: 20px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.184);
+}
+
+nav > a {
+    color: var(--cor1);
+    padding: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: var(--cor1);
+    color: var(--cor2);
+}
+
+/* Sections */
+
+section {
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
+/* Início*/
+
+section#inicio {
+    position: relative;
+    background: var(--cor3) url('../img/questao-de-tempo-background-teste2.png') center center no-repeat fixed;
+    background-size: cover;
+}
+
+article#texto-inicio {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+article#texto-inicio h1 {
+    font-family: var(--fonte-destaque);
+    font-weight: 100;
+    font-size: 5em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.266);
+}
+
+article#texto-inicio p {
+    font-family: var(--fonte-destaque);
+    font-weight: 100;
+    font-size: 2em;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.266);
+}
+
+/* Atores */
+
+section#atores {
+    height: 100vh;
+    font-family: var(--fonte-destaque);
+    text-align: center;
+    padding: 20px;
+}
+
+section#atores h1 {
+    padding-top: 55px;
+    padding-bottom: 20px;
+    font-weight: 400; 
+    font-size: 3em;  
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.266);
+}
+
+section#atores p {
+    font-weight: 300;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.266);
+}
+
+picture.imagem {
+    display: inline-block;
+    margin: 3.3%;
+}
+
+picture.imagem p {
+    font-weight: 100;
+}
+
+/* Sinopse */
+
+section#sinopse {
+    position: relative;
+    background-color: var(--cor1);
+    padding-top: 55px;
+    padding: 20px;
+    height: 100vh;
+    text-align: center;
+}
+
+article#conteudo-sinopse {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section#sinopse h1{
+    font-family: var(--fonte-destaque);
+    padding-bottom: 30px;
+    font-weight: 400; 
+    font-size: 3em;  
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.266);
+}
+
+section#sinopse p {
+    text-align: justify;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.266);
+}
+
+/* Trailler */
+
+section#trailler {
+    position: relative;
+    background-color: var(--cor2);
+    padding-top: 75px;
+    padding: 20px;
+    text-align: center;
+}
+
+div.video {
+    background-color: var(--cor2);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-top: 75px;
+    padding-bottom: 40%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+}
+
+div.link-trailler {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+div.link-trailler a {
+    color: var(--cor1);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+div.link-trailler a:hover {
+    color: var(--cor0);
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--cor1);
+    color: var(--cor2);
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
